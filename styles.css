@@ -1,19 +1,27 @@
 *{
     background-color: rgba(255, 255, 255, 0.884);
-    font-family: ;
 }
 
-header{
+.grid-pinterest-by{
     display: grid;
-    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(2, 20%);
+    margin-inline-start: 50%;
+}
+
+.logo-input{
+    display: grid;
+    grid-template-columns: repeat(2, 20%);
+    align-items: center;
+    
+
 }
 
 input{
-    width: 250px;
-    height: 20%;
-    margin-top: 20px;
-    border-radius: 5px;
-    background-color: lightslategrey;
+    width: 300px;
+    height: 50%;
+    margin: auto;
+    border-radius: 12px;
+    background-color: transparent;    
 
 }
 
