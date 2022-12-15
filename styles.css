@@ -1,3 +1,26 @@
 *{
     background-color: rgba(255, 255, 255, 0.884);
+    font-family: ;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+}
+
+input{
+    width: 250px;
+    height: 20%;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: lightslategrey;
+
+}
+
+.imagenes img{
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%)
 }
