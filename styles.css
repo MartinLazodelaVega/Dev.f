@@ -1,34 +1,102 @@
-*{
-    background-color: rgba(255, 255, 255, 0.884);
-}
 
-.grid-pinterest-by{
-    display: grid;
-    grid-template-rows: repeat(2, 20%);
-    margin-inline-start: 50%;
-}
-
-.logo-input{
-    display: grid;
-    grid-template-columns: repeat(2, 20%);
-    align-items: center;
+.header{
     
+    /*tipo de display del contenedor general*/
+    display: grid;
+    grid-template-columns: 15% 10% 50% 7.5% 7.5%;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    margin: 10px;
 
+    /*Me centra el elemento en la pantalla*/
+    justify-content: center;
+    
+    /*Me alínea todos los elementos sobre le leje horizontal*/
+    align-items: center;
+}
+
+.header-element{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.header-element:hover img{
+    
+    transform: scale(1.1);
+}
+
+.home-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.home-button-container:hover {
+    
+    transform: scale(1.1);
+}
+
+.button{
+    background-color: rgb(238, 235, 235);
+    border-color: transparent;
+    height: 35px;
+    width: 50%;
+    border-radius: 20px;
+    font-family: pacifico;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
 }
 
 input{
-    width: 300px;
-    height: 50%;
-    margin: auto;
-    border-radius: 12px;
-    background-color: transparent;    
-
+    height: 35px;
+    width: 90%;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: rgb(238, 235, 235);
+    padding-left: 10px;
+    font-family: pacifico;
+    color: gray;
+    display: flex;
+    
 }
 
-.imagenes img{
-    width: 200px;
-    margin: 10px;
-    border-radius: 10px;
+.imagen{
     display: grid;
-    grid-template-columns: repeat(4, 20%)
+    align-content: center top;
+    width: auto;
+    margin: 20px;
+    cursor: zoom-in;
+}
+
+.imagen img{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border-radius: 25px;
+}
+
+.imagen:hover img{
+    
+    transform: scale(1.15);
+    
+}
+
+.grid-imagenes{
+
+    margin: auto;
+    /*tipo de display del contenedor general*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 210px);
+    background-color: white;
+    
 }
